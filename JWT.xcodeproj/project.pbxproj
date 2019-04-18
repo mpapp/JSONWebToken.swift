@@ -99,9 +99,9 @@
 
 /* Begin PBXFileReference section */
 		"JWT::JWA::Product" /* JWA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JWA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"JWT::JWATests::Product" /* JWATests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = JWATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"JWT::JWATests::Product" /* JWATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = JWATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"JWT::JWT::Product" /* JWT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JWT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"JWT::JWTTests::Product" /* JWTTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = JWTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"JWT::JWTTests::Product" /* JWTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = JWTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* Base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base64.swift; sourceTree = "<group>"; };
 		OBJ_11 /* ClaimSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimSet.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Claims.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Claims.swift; sourceTree = "<group>"; };
@@ -366,6 +366,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					"JWT::JWA" = {
+						LastSwiftMigration = 1020;
+					};
+					"JWT::JWATests" = {
+						LastSwiftMigration = 1020;
+					};
+					"JWT::JWT" = {
+						LastSwiftMigration = 1020;
+					};
+					"JWT::JWTTests" = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "JWT" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -505,6 +519,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_INCLUDE_PATHS = CommonCrypto;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				USE_HEADERMAP = NO;
 			};
 			name = Debug;
@@ -526,6 +541,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_INCLUDE_PATHS = CommonCrypto;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				USE_HEADERMAP = NO;
 			};
 			name = Release;
@@ -551,7 +567,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGET_NAME = JWA;
 			};
 			name = Debug;
@@ -577,7 +593,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGET_NAME = JWA;
 			};
 			name = Release;
@@ -599,7 +615,7 @@
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGET_NAME = JWATests;
 			};
 			name = Debug;
@@ -621,7 +637,7 @@
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGET_NAME = JWATests;
 			};
 			name = Release;
@@ -647,7 +663,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGET_NAME = JWT;
 			};
 			name = Debug;
@@ -673,7 +689,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGET_NAME = JWT;
 			};
 			name = Release;
@@ -683,7 +699,7 @@
 			buildSettings = {
 				LD = /usr/bin/true;
 				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -692,7 +708,7 @@
 			buildSettings = {
 				LD = /usr/bin/true;
 				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -725,7 +741,7 @@
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGET_NAME = JWTTests;
 			};
 			name = Debug;
@@ -747,7 +763,7 @@
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGET_NAME = JWTTests;
 			};
 			name = Release;
