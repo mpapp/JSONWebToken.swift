@@ -124,7 +124,6 @@
 		OBJ_33 /* PayloadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadTests.swift; sourceTree = "<group>"; };
 		OBJ_35 /* HMACTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMACTests.swift; sourceTree = "<group>"; };
 		OBJ_36 /* NoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoneTests.swift; sourceTree = "<group>"; };
-		OBJ_37 /* CommonCrypto */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CommonCrypto; sourceTree = SOURCE_ROOT; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* Algorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algorithm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -243,7 +242,6 @@
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_25 /* Tests */,
-				OBJ_37 /* CommonCrypto */,
 				OBJ_38 /* Dependencies */,
 				OBJ_39 /* Products */,
 			);
@@ -374,6 +372,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = OBJ_5;
